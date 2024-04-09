@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    druid:
+      driver-class-name: ${community.datasource.driver-class-name}
+      url: jdbc:mysql://${community.datasource.host}:${community.datasource.port}/${community.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${community.datasource.username}
+      password: ${community.datasource.password}
